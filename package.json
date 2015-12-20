@@ -1,0 +1,28 @@
+{
+  "name": "estree-runner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "babel-node scripts/clean.js",
+    "prebuild": "npm run clean",
+    "build": "babel lib -d ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.21",
+    "babel-plugin-syntax-flow": "^6.3.13",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
+    "babel-preset-es2015": "^6.3.13",
+    "del": "^2.2.0",
+    "flow-bin": "^0.20.1"
+  },
+  "dependencies": {
+    "babylon": "^6.3.21",
+    "lodash.defaults": "^3.1.2",
+    "recurserator": "^1.1.0"
+  }
+}
